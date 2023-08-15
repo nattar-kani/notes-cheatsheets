@@ -115,8 +115,78 @@ BCNF:
 
 ## What is the difference between UNION and UNION ALL?
 
-1. UNION 
+UNION: 
 The UNION command is used to select related information from two tables, much like the JOIN command. However, when using the UNION command all selected columns need to be of the same data type. With UNION, only distinct values are selected.
 
-2. UNION ALL 
+UNION ALL: 
 The UNION ALL command is equal to the UNION command, except that UNION ALL selects all values.
+
+## What is a view in SQL? How to create one
+
+A view is a virtual table based on the result-set of an SQL statement. We can create using create view syntax.  
+
+CREATE VIEW view_name AS  
+SELECT column_name(s)  
+FROM table_name  
+WHERE condition  
+
+## What are the uses of view?
+
+1. Views can represent a subset of the data contained in a table; consequently, a view can limit the degree of exposure of the underlying tables to the outer world: a given user may have permission to query the view, while denied access to the rest of the base table.  
+   
+2. Views can join and simplify multiple tables into a single virtual table  
+
+3. Views can act as aggregated tables, where the database engine aggregates data (sum, average etc.) and presents the calculated results as part of the data  
+
+4. Views can hide the complexity of data; for example a view could appear as Sales2000 or Sales2001, transparently partitioning the actual underlying table  
+
+5. Depending on the SQL engine used, views can provide extra security
+
+## What is the difference between “Primary Key” and “Unique Key”?
+
+1. We can have only one Primary Key in a table whereas we can have more than one Unique Key in a table.
+
+2. The Primary Key cannot have a NULL value whereas a Unique Key may have only one null value.
+
+3. By default, a Primary Key is a Clustered Index whereas by default, a Unique Key is a unique non-clustered index.
+
+4. A Primary Key supports an Auto Increment value whereas a Unique Key doesn't support an Auto Increment value.
+
+## What is the difference between the “WHERE” clause and the “HAVING” clause?
+
+1. WHERE clause can be used with a Select, Update and Delete Statement Clause but the HAVING clause can be used only with a Select statement.
+
+2. We can't use an aggregate functions in the WHERE clause unless it is in a sub-query contained in a HAVING clause whereas we can use an aggregate function in the HAVING clause. We can use a column name in the HAVING clause but the column must be contained in the group by clause.
+
+3. WHERE is used before the GROUP BY clause whereas a HAVING clause is used to impose a condition on the GROUP Function and is used after the GROUP BY clause in the query.
+
+4. A WHERE clause applies to each and every row whereas a HAVING clause applies to summarized rows (summarized with GROUP BY).
+
+5. In the WHERE clause the data that is fetched from memory depending on a condition whereas in HAVING the completed data is first fetched and then separated depending on the condition.
+
+## What is the difference between the “DELETE” and “TRUNCATE” SQL commands?
+
+1. The DELETE command is used to remove rows from a table based on a WHERE condition whereas TRUNCATE removes all rows from a table.
+
+2. So we can use a where clause with DELETE to filter and delete specific records whereas we cannot use a Where clause with TRUNCATE.
+
+3. DELETE is executed using a row lock, each row in the table is locked for deletion whereas TRUNCATE is executed using a table lock and the entire table is locked for removal of all records.
+
+4. DELETE is a DML command whereas TRUNCATE is a DDL command.
+
+5. DELETE retains the identity of the column value whereas in TRUNCATE, the Identify
+column is reset to its seed value if the table contains any identity column.
+
+6. To use Delete you need DELETE permission on the table whereas to use Truncate on
+a table you need at least ALTER permission on the table.
+
+7. DELETE uses more transaction space than the TRUNCATE statement whereas
+Truncate uses less transaction space than DELETE statement.
+
+8. DELETE can be used with indexed views whereas TRUNCATE cannot be used with
+indexed views.
+
+9. The DELETE statement removes rows one at a time and records an entry in the
+transaction log for each deleted row whereas TRUNCATE TABLE removes the data by deallocating the data pages used to store the table data and records only the page deallocations in the transaction log.
+
+10. Delete activates a trigger because the operation is logged individually whereas TRUNCATE TABLE can't activate a trigger because the operation does not log individual row deletions.
