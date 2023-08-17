@@ -16,6 +16,10 @@ In that way, the query optimizer will consider even the clustered keys on the in
 - Do table partitioning. When a particular table has a billion of records, it would be practical to partition a table so that it can increase the read operation performance. Every partitioned
 table will be considered as physical smaller tables internally.
 
+## Joins in SQL
+
+https://drive.google.com/file/d/14Lh0R5nZfJp9gFTHUxmiXiBLfy702T3K/view?usp=sharing
+
 - Use stored procedures because when you first execute a stored procedure, its execution plan is stored and the
 same execution plan will be used for the subsequent executions rather than generating an execution plan every
 time.
