@@ -14,11 +14,7 @@ Building non-clustered indexes, you could also increase the performance further.
 In that way, the query optimizer will consider even the clustered keys on the indexed views so there might be a possible faster option to execute your query.
 
 - Do table partitioning. When a particular table has a billion of records, it would be practical to partition a table so that it can increase the read operation performance. Every partitioned
-table will be considered as physical smaller tables internally.
-
-## Joins in SQL
-
-https://drive.google.com/file/d/14Lh0R5nZfJp9gFTHUxmiXiBLfy702T3K/view?usp=sharing
+table will be considered as physical smaller tables internally.  
 
 - Use stored procedures because when you first execute a stored procedure, its execution plan is stored and the
 same execution plan will be used for the subsequent executions rather than generating an execution plan every
@@ -194,3 +190,7 @@ indexed views.
 transaction log for each deleted row whereas TRUNCATE TABLE removes the data by deallocating the data pages used to store the table data and records only the page deallocations in the transaction log.
 
 10. Delete activates a trigger because the operation is logged individually whereas TRUNCATE TABLE can't activate a trigger because the operation does not log individual row deletions.
+
+## Joins in SQL
+
+https://drive.google.com/file/d/14Lh0R5nZfJp9gFTHUxmiXiBLfy702T3K/view?usp=sharing
