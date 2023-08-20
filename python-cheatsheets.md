@@ -3,3 +3,5 @@
 ![image](https://github.com/nattar-kani/python-Q-A/assets/98700794/d95452de-ad3d-466b-bbd3-23fd24868869)
 
 ![image](https://github.com/nattar-kani/sql-interview-Q-A/assets/98700794/23afa017-2d30-40f1-84e9-14202f7aa89b)
+
+![image](https://github.com/nattar-kani/notes-cheatsheets/assets/98700794/5fc64743-58c8-404d-a247-cb7dcb7ef47a)
