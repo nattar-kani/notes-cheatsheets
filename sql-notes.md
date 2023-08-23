@@ -231,8 +231,70 @@ Answer: Use the ORDER BY clause: "SELECT * FROM table_name ORDER BY column_name;
 
 Answer: A primary key uniquely identifies each record in a table and ensures data integrity by preventing duplicate or null values.
 
-## hat is a subquery?
+## What is a subquery?
 
 Answer: A subquery is a query nested within another query and is used to return data for the outer query.
 
-## 
+## How would you update data in a table?
+
+Answer: Use the UPDATE statement: "UPDATE table_name SET column_name = new_value WHERE condition;"
+
+## What is the purpose of the UNION operator?
+
+Answer: UNION combines the result sets of two or more SELECT queries into a single result set, removing duplicates by default.
+
+## How would you delete data from a table?
+
+Answer: Use the DELETE statement: "DELETE FROM table_name WHERE condition;"
+
+## Explain the concept of an index.
+
+Answer: An index improves query performance by creating a quick access path to data, much like an index in a book.
+
+## What is normalization in SQL?
+
+Answer: Normalization is the process of organising data in a database to minimize redundancy and dependency issues.
+
+## How to calculate the average of a column?
+
+Answer: Use the AVG function: "SELECT AVG(column_name) FROM table_name;"
+
+## What is the purpose of the CASE statement?
+
+Answer: The CASE statement allows you to perform conditional logic in SQL queries, similar to the if-else construct in other programming languages.
+
+## Explain the ACID properties of transactions.
+
+Answer: ACID stands for Atomicity, Consistency, Isolation, and Durability. It ensures database transactions are reliable and maintains data integrity.
+
+## How to find the highest value in a column?
+
+Answer: Use the MAX function: "SELECT MAX(column_name) FROM table_name;"
+
+## What is a foreign key?
+
+Answer: A foreign key establishes a link between two tables, referencing the primary key of another table to maintain referential integrity.
+
+## How do you count the number of rows in a table?
+
+Answer: Use the COUNT function: "SELECT COUNT(*) FROM table_name;"
+
+## Explain the difference between CHAR and VARCHAR data types.
+
+Answer: CHAR is a fixed-length string, while VARCHAR is a variable-length string. VARCHAR uses only the space required for the data.
+
+## What is a self-join?
+
+Answer: A self-join is a type of SQL join where a table is joined with itself based on a related column.
+
+## How to add a new column to an existing table?
+
+Answer: Use the ALTER TABLE statement: "ALTER TABLE table_name ADD new_column datatype;"
+
+## What are stored procedures?
+
+Answer: Stored procedures are precompiled SQL code stored in the database that can be executed with a single call, providing modularity and security.
+
+## can you explain the difference between union and union all? 
+
+One gives all results, one gives a unique set of results. Also, I'm not a fan of select *. It is fine for development work but should never hit production in my opinion...
