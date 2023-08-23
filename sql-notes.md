@@ -194,3 +194,45 @@ transaction log for each deleted row whereas TRUNCATE TABLE removes the data by 
 ## Joins in SQL
 
 https://drive.google.com/file/d/14Lh0R5nZfJp9gFTHUxmiXiBLfy702T3K/view?usp=sharing
+
+## What is SQL?
+
+Answer: SQL (Structured Query Language) is a programming language used to manage and manipulate relational databases.
+
+## What are the main types of SQL commands?
+
+Answer: SQL commands are mainly of four types: Data Definition Language (DDL), Data Manipulation Language (DML), Data Control Language (DCL), and Transaction Control Language (TCL).
+
+## How would you retrieve all records from a table?
+
+Answer: Use the SELECT statement: "SELECT * FROM table_name;"
+
+## What is the difference between INNER JOIN and OUTER JOIN?
+
+Answer: INNER JOIN returns matching rows, while OUTER JOIN returns matching rows and non-matching rows from one or both tables.
+
+## Explain GROUP BY clause.
+
+Answer: GROUP BY groups rows based on specified columns, and you can use aggregate functions like COUNT, SUM, AVG, etc., with it.
+
+## How to filter results in SQL?
+
+Answer: Use the WHERE clause: "SELECT * FROM table_name WHERE condition;"
+
+## What is the purpose of the HAVING clause?
+
+Answer: The HAVING clause filters grouped results based on specified conditions, similar to the WHERE clause but used with GROUP BY.
+
+## How would you sort query results?
+
+Answer: Use the ORDER BY clause: "SELECT * FROM table_name ORDER BY column_name;"
+
+## Explain the concept of a primary key.
+
+Answer: A primary key uniquely identifies each record in a table and ensures data integrity by preventing duplicate or null values.
+
+## hat is a subquery?
+
+Answer: A subquery is a query nested within another query and is used to return data for the outer query.
+
+## 
