@@ -14,3 +14,5 @@
 
 ![image](https://github.com/nattar-kani/notes-cheatsheets/assets/98700794/29ce19af-b25e-4a57-892b-49ff5ddebdc5)
 
+![image](https://github.com/nattar-kani/notes-cheatsheets/assets/98700794/a46d06aa-eb02-42ef-99a2-32d81ed411db)
+
